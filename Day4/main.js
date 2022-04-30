@@ -54,7 +54,7 @@ if (grade < 50){
 } else {
     console.log(` You have entered ${grade} points. That's not a valid point number.`);
 }
-*/
+
 
 let month = prompt("Enter the month to check it's season:").toLowerCase()
 if (month == "december" || month == "january" || month == "february"){
@@ -69,3 +69,15 @@ if (month == "december" || month == "january" || month == "february"){
     console.log(` You entered ${month}. This is not a valid month.\n
     Please enter the full month in English`)
 }
+
+
+
+let day = prompt("What day is it?")
+let parsedDay = day.toLowerCase()
+if(parsedDay == "saturday" || parsedDay == "sunday"){
+    console.log(` You entered ${day}. Happy weekend!`)
+} else {
+    console.log(` You entered ${day}. So it is a normal weekday.`)
+}
+*/
+
