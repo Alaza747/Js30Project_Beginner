@@ -9,8 +9,6 @@ const mixedDataTypes = [1, true, "hi", [1,2,3,4], 10.8, 134]
 console.log(mixedDataTypes.length)
 */
 
-import { countries } from "./countries"
-
 let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
 
 /*
@@ -45,8 +43,8 @@ console.log(itCompanies)
 
 //LEVEL 2
 
-//import { webTechs } from "./web_techs.js"
-//import { countries } from "./countries.js"
+import { webTechs } from "./web_techs.js"
+import { countries } from "./countries.js"
 /*
 let text =
 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
