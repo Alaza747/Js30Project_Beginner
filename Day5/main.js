@@ -1,83 +1,48 @@
 // LEVEL 1
+/*
+const arr = Array(6)
+console.log(arr.length)
+arr.fill(1)
+console.log(arr[0], arr[arr.length/2], arr[arr.length-1])
+
+const mixedDataTypes = [1, true, "hi", [1,2,3,4], 10.8, 134]
+console.log(mixedDataTypes.length)
+*/
+
+let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
 
 /*
-let usrInput = prompt("Enter your age:")
-if (usrInput > 18) {
-    console.log(`Your age is = ${usrInput} \n
-    You are old enough to drive`)
+console.log(itCompanies, itCompanies.length)
+
+let comp = prompt("What company do you want to check?")
+
+if (itCompanies.includes(comp)){
+    console.log(comp)
 } else {
-    console.log(`Your age is = ${usrInput} \n
-    You are NOT old enough to drive\n
-    You should wait ${18 - parseInt(usrInput)} years.`)
+    console.log("Is not found.")
 }
 
-
-let myAge = 23
-let yourAge = prompt("What is your age?")
-
-if (yourAge > myAge){
-    console.log(` You are older than me by ${parseInt(yourAge) - myAge} years`)
-} else {
-    console.log(`I am older than you by ${myAge - parseInt(yourAge)} years`)
-}
+console.log(itCompanies.filter(company => company.includes("o")))
 
 
-let a = parseInt(prompt("A = ?"))
-let b = parseInt(prompt("B = ?"))
+console.log(itCompanies.sort())
+console.log(itCompanies.reverse())
 
-a > b 
-    ? console.log(` A (${a}) is bigger than B (${b})`)
-    : console.log(` B (${b}) is bigger than (${a})`)
+console.log(itCompanies.slice(0,3))
 
+console.log(itCompanies)
+//console.log(itCompanies.slice(0, itCompanies.length - 3))
 
-let c = parseInt(prompt("Enter some number to check if it is even:"))
-if (c % 2 == 0){
-    console.log(`${c} is even.`)
-} else {
-    console.log(` ${c} is odd.`)
-}
+//console.log(itCompanies.slice(itCompanies.length/2,itCompanies.length/2+1))
 
-
-// LEVEL 2
-
-let grade = parseInt(prompt("What is your score?"))
-if (grade < 50){
-    console.log(` You have ${grade} points. That's an 'F'.`);
-} else if (grade < 60 ){
-    console.log(` You have ${grade} points. That's a 'D'.`);
-} else if (grade < 70 ){
-    console.log(` You have ${grade} points. That's a 'C'.`);
-} else if (grade < 80 ){
-    console.log(` You have ${grade} points. That's a 'B'.`);
-} else if (grade <= 100 ){
-    console.log(` You have ${grade} points. That's an 'A'.`);
-} else {
-    console.log(` You have entered ${grade} points. That's not a valid point number.`);
-}
-
-
-let month = prompt("Enter the month to check it's season:").toLowerCase()
-if (month == "december" || month == "january" || month == "february"){
-    console.log(` You entered ${month}. Soooo it is Winter.`)
-} else if (month == "june" || month == "july" || month == "august"){
-    console.log(` You entered ${month}. Soooo it is Summer.`)
-} else if (month == "march" || month == "april" || month == "may"){
-    console.log(` You entered ${month}. Soooo it is Spring.`)
-} else if (month == "september" || month == "october" || month == "november"){
-    console.log(` You entered ${month}. Soooo it is Autumn.`)
-} else {
-    console.log(` You entered ${month}. This is not a valid month.\n
-    Please enter the full month in English`)
-}
-
-
-
-let day = prompt("What day is it?")
-let parsedDay = day.toLowerCase()
-if(parsedDay == "saturday" || parsedDay == "sunday"){
-    console.log(` You entered ${day}. Happy weekend!`)
-} else {
-    console.log(` You entered ${day}. So it is a normal weekday.`)
-}
+//console.log(itCompanies.shift())
+//console.log(itCompanies.pop())
+console.log(itCompanies.splice(itCompanies.length/2, itCompanies.length/2+1))
+console.log(itCompanies)
 */
+
+//LEVEL 2
+
+import { webTechs } from "./web_techs"
+import { countries } from "./countries"
 
