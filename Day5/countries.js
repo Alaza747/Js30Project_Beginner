@@ -12,4 +12,4 @@ const countries = [
     'Kenya'
   ]
 
-  export {countries}
+  export {countries};

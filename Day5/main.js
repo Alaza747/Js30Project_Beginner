@@ -9,6 +9,8 @@ const mixedDataTypes = [1, true, "hi", [1,2,3,4], 10.8, 134]
 console.log(mixedDataTypes.length)
 */
 
+import { countries } from "./countries"
+
 let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
 
 /*
@@ -43,6 +45,36 @@ console.log(itCompanies)
 
 //LEVEL 2
 
-import { webTechs } from "./web_techs"
-import { countries } from "./countries"
+//import { webTechs } from "./web_techs.js"
+//import { countries } from "./countries.js"
+/*
+let text =
+'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+let words = text.toString()
+words = words.replace(/[^a-zA-Z0-9 ]/g, '').split(' ');
 
+console.log(words)
+console.log(words.length)
+*/
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+/*
+if (shoppingCart[0] !== "Meat"){
+    shoppingCart.unshift('Meat')
+}
+
+if (shoppingCart[shoppingCart.length-1] !== "Sugar") {
+    shoppingCart.push("Sugar")
+}
+
+let allergic = prompt("Are you allergic to Honey?").toLowerCase()
+
+if (allergic == "yes" && shoppingCart.includes('Honey')) {
+    let i = shoppingCart.indexOf("Honey")
+    shoppingCart.splice(i, 1)
+    console.log("we are here")
+} else {
+    console.log("not okay")
+}
+*/
+shoppingCart[shoppingCart.indexOf("Tea")] = "Green Tea"
+console.log(countries)
