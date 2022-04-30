@@ -73,6 +73,24 @@ if (allergic == "yes" && shoppingCart.includes('Honey')) {
 } else {
     console.log("not okay")
 }
-*/
+
 shoppingCart[shoppingCart.indexOf("Tea")] = "Green Tea"
-console.log(countries)
+
+
+
+if (countries.includes("Ethiopia")) {
+    console.log(countries[countries.indexOf("Ethiopia")].toUpperCase())
+}
+
+if (webTechs.includes("Sass")) {
+    console.log(countries[countries.indexOf("Sass")] + "is a CSS preprocess")
+} else {
+    webTechs.push("Sass")
+    console.log(webTechs)
+}
+
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+let fullStack = frontEnd.concat(backEnd)
+console.log(fullStack)
+*/
