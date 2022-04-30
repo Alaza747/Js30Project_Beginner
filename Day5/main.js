@@ -93,4 +93,29 @@ const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 const backEnd = ['Node','Express', 'MongoDB']
 let fullStack = frontEnd.concat(backEnd)
 console.log(fullStack)
+
+//LEVEL 3
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+console.log(ages.sort())
+console.log(" Max = " + Math.max(...ages) + "\n", "Min = " + Math.min(...ages))
+console.log(" Range = " + (Math.max(...ages) + Math.min(...ages)))
+console.log(ages.reduce((a, b) => a + b, 0))
+
+if (countries.length % 2 == 0){
+    console.log(countries[countries.length/2], countries[countries.length/2+1])
+} else {
+    console.log(countries[countries.length/2+0.5])
+}
 */
+
+const middleIndex = Math.ceil(countries.length / 2)
+if (countries.length % 2 == 1) {
+    countries.push("Austria")
+}
+
+if (countries.length % 2 == 0){
+    let cont1 = [], cont2 = []
+    cont1 = countries.splice(0, middleIndex)
+    cont2 = countries.splice(-middleIndex)
+    console.log(cont1, cont2)
+}
