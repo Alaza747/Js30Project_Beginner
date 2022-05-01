@@ -261,5 +261,22 @@ let full = fullStack.join().split(',')
 for (let i = 0; i < full.length; i++){
     console.log(`${full[i]}\n`)
 }
-*/
 
+
+const landArr2 = []
+for (let i = 0; i < countries.length; i++){
+    if(countries[i].includes('land')){
+        landArr2.push(countries[i])
+        countries.splice(i,1)
+    }
+}
+console.log(countries, landArr2)
+
+
+
+const newCountries = countries.reverse()
+for(let i = 0 ; i < newCountries.length ; i++){
+    newCountries[i] = newCountries[i].charAt(0).toLowerCase() + newCountries[i].substring(1);
+}      
+console.log(newCountries)
+*/
