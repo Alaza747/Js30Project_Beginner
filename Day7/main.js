@@ -89,3 +89,11 @@ function allSameDataType(arr){
         console.log("No")
     }
 }
+
+function isPrime(x){
+    for(let i = 2, s = Math.sqrt(x); i <= s; i++){
+        if(x % i === 0) return false
+    }
+    return x > 1
+}
+console.log(isPrime(5))
