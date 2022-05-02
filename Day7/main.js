@@ -43,4 +43,10 @@ function solveLinEquation(a, b, c){
     console.log(`X = ${xIntercept}y + ${xSlope}`)
 }
 
-solveLinEquation(4,68,6)
+function printArray(arr){
+    for(let i = 0; i < arr.length; i++){
+        console.log(arr[i])
+    }
+}
+
+printArray([1,4,8,9,2,4,6])
