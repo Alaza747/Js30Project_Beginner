@@ -73,4 +73,19 @@ function sevenRandomNumbers(){
     console.log(randomArr)
 }
 
-sevenRandomNumbers()
+function allSameDataType(arr){
+    let answer = 0
+    for(let i = 0; i < arr.length; i++){
+        let referenceType = typeof(arr[0])
+        if(typeof(arr[i]) == referenceType){
+            continue
+        } else {
+            answer++
+        }
+    }
+    if(answer == 0){
+        console.log("Yes")
+    } else {
+        console.log("No")
+    }
+}
