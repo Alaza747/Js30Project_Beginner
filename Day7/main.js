@@ -36,4 +36,12 @@ function checkSeason(month){
     console.log(x)
 }
 
-checkSeason("september")
+function solveLinEquation(a, b, c){
+    console.log(`Your linear equation is = \n${a}*x + ${b}*y + ${c} = 0`)
+    console.log(`${a}x = ${-b}y - ${c}`)
+    console.log(`x = ${-b/a}y - ${c/a}`)
+    let x = (-b/a) - (c/a)   
+    console.log(`X = ${x}`)
+}
+
+solveLinEquation(4,8,2)
