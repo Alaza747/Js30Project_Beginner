@@ -49,4 +49,15 @@ function printArray(arr){
     }
 }
 
-printArray([1,4,8,9,2,4,6])
+function showDateTime(){
+    const d = new Date()
+    let day = d.getDate()
+    let month = d.getMonth()
+    let year = d.getFullYear()
+    let hour = d.getHours()
+    let minutes = d.getMinutes()
+    let seconds = d.getSeconds()
+    console.log(`${day}/${month}/${year} ${hour}:${minutes}:${seconds}`)
+}
+
+showDateTime()
