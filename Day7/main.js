@@ -60,4 +60,17 @@ function showDateTime(){
     console.log(`${day}/${month}/${year} ${hour}:${minutes}:${seconds}`)
 }
 
-showDateTime()
+function sevenRandomNumbers(){
+    const randomArr = []
+    while(randomArr.length < 7){
+        let x = Math.floor(Math.random()*10)
+        if(randomArr.includes(x)){
+            continue
+        } else {
+            randomArr.push(x)
+        }
+    }
+    console.log(randomArr)
+}
+
+sevenRandomNumbers()
