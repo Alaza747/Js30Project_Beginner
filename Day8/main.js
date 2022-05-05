@@ -1,10 +1,16 @@
-//main.js
-a = 'JavaScript' // declaring a variable without let or const make it available in window object and this found anywhere
-b = 10 // this is a global scope variable and found in the window object
-function letsLearnScope() {
-  console.log(a, b)
-  if (true) {
-    console.log(a, b)
-  }
+const dog = {
+    name: "Deb",
+    legs: 4,
+    color: "white",
+    age: 2,
+    bark: function() {
+        return "WOOF WOOF"
+    }
 }
-console.log(a, b) // accessible
+
+dog.breed = "Pomeranian"
+dog.getDogInfo = function() {
+    return `His name is ${this.name}, he is of ${this.color} color, he is ${this.age} years old, ${this.breed}.`
+}
+
+console.log(dog.getDogInfo())
