@@ -79,4 +79,16 @@ function countSkills(x){
     return Object.keys(users)[indexHighSkill]
 }
 
-console.log(`The person with the highest number of skills is ${countSkills(users)}`)
+//console.log(`The person with the highest number of skills is ${countSkills(users)}`)
+
+function numLogged(x){
+    let num = 0
+    for (const person of Object.entries(x)){
+        if(person[1].isLoggedIn == true){
+            num++
+        }
+    }
+    return num
+}
+
+console.log(`The number of logged in users is ${numLogged(users)}`)
