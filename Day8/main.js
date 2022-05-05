@@ -115,4 +115,4 @@ function mernUsers(x){
 
 const anton = Object.assign({}, users)
 anton.Anton = {email: "HI", skills: ["HTML", "CSS", "JS"], age: 23}
-console.log(anton)
+console.log(Object.values(anton))
