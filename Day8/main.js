@@ -111,4 +111,8 @@ function mernUsers(x){
     return num
 }
 
-console.log(`The number of MERN Stack users is ${mernUsers(users)}`)
+//console.log(`The number of MERN Stack users is ${mernUsers(users)}`)
+
+const anton = Object.assign({}, users)
+anton.Anton = {email: "HI", skills: ["HTML", "CSS", "JS"], age: 23}
+console.log(anton)
