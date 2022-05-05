@@ -91,4 +91,24 @@ function numLogged(x){
     return num
 }
 
-console.log(`The number of logged in users is ${numLogged(users)}`)
+//console.log(`The number of logged in users is ${numLogged(users)}`)
+
+let MERN = ["MongoDB", "Express", "React", "Node"]
+
+function multipleCheck(userSkills, stackToCheck){
+    return stackToCheck.every(element => {
+        return userSkills.includes(element)
+    })
+}
+
+function mernUsers(x){
+    let num = 0
+    for (const person of Object.entries(x)){
+        if(multipleCheck(person[1].skills, MERN)) {
+            num++
+        }
+    }
+    return num
+}
+
+console.log(`The number of MERN Stack users is ${mernUsers(users)}`)
