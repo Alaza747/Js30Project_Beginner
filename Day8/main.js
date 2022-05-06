@@ -241,3 +241,18 @@ function averageRating(item){
         }
     }
 }
+
+//Function to like or unlike products with userId hardcoded
+function likeProduct(item){
+    for(let i = 0; i < products.length; i++){
+        if(item == products[i].description){
+            let x = products[i].likes
+            if(x.includes('1234')){
+                x.splice(x.indexOf('1234'), 1)
+            } else {
+                x.push('1234')
+            }
+            return `${x.join(', ')} liked the product!`
+        }
+    }
+}
