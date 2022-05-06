@@ -190,19 +190,28 @@ const products = [
   }
 ]
 
-
+//SignUp function that checks if the input username is already in the database  
+//If not, it will add the username to the database 
 function signUp (login) {
     for(let i = 0; i < Object.keys(users1).length; i++) {
-        if(login == users1[0].username){
+        if(login == users1[i].username){
             return "Is already registered."
         }
     }
     users1.push({
         id: "111111",
         username: login, 
-        email: "login@gmail.com"
+        email: `${login}@gmail.com`
     })
     return "New User registered."
 }
-console.log(signUp("Anton"))
-console.log(users1)
+
+/*
+function signIn(login, emailPwd){
+    for(let i = 0; i < Object.keys(users1).length; i++) {
+        if(login == users1[0].username && emailPwd == users1[0].username){
+            return "Is already registered."
+        }
+    }
+}
+*/
