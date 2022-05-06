@@ -216,4 +216,11 @@ function signIn(login, emailPwd){
     return `Unfortunately, ${login}, the credentials are not correct.`
 }
 
-console.log(signIn("Thomas", "n@thomas.com"))
+function rateProduct(ratedProduct, rate){
+    for(let i = 0; i < products.length; i++){
+        if(ratedProduct == products[i].description){
+            products[i].ratings.push(rate)
+            return `${products[i].description} was rated with a ${rate}.`
+        }
+    }
+}
