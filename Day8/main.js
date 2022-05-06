@@ -225,3 +225,19 @@ function rateProduct(ratedProduct, rate){
         }
     }
 }
+
+//Function to calculate the average rating of an item 
+function averageRating(item){
+    let avgRating = 0
+    for(let i = 0; i < products.length; i++){
+        if(item == products[i].description){
+            let ratingCount = 0
+            for (let rating of products[i].ratings){
+                avgRating += rating.rate
+                ratingCount++
+                avgRating /= ratingCount
+            }
+            return `${products[i].description}'s average rating is ${avgRating}.`
+        }
+    }
+}
