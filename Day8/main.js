@@ -206,12 +206,14 @@ function signUp (login) {
     return "New User registered."
 }
 
-/*
+//This function checks if login and emailPwd (alias password) are present in the database 
 function signIn(login, emailPwd){
     for(let i = 0; i < Object.keys(users1).length; i++) {
-        if(login == users1[0].username && emailPwd == users1[0].username){
-            return "Is already registered."
+        if(login == users1[i].username && emailPwd == users1[i].email){
+            return `Credentials are correct! Welcome back ${login}`
         }
     }
+    return `Unfortunately, ${login}, the credentials are not correct.`
 }
-*/
+
+console.log(signIn("Thomas", "n@thomas.com"))
