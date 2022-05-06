@@ -216,6 +216,7 @@ function signIn(login, emailPwd){
     return `Unfortunately, ${login}, the credentials are not correct.`
 }
 
+//Function to rate a product
 function rateProduct(ratedProduct, rate){
     for(let i = 0; i < products.length; i++){
         if(ratedProduct == products[i].description){
