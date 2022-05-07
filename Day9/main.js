@@ -32,7 +32,7 @@ console.log(countries.filter((country) => country.length == 6))
 console.log(countries.filter((country) => country.length >= 6))
 
 console.log(countries.filter((country) => country.startsWith("E")))
-*/
+
 
 // 1-16 
 function getStringLists(arr){
@@ -44,3 +44,7 @@ function getStringLists(arr){
     }
     return cleanArr
 }
+*/
+
+// 1-17
+let sum = numbers.reduce((acc, cur) => acc + cur, 0)
