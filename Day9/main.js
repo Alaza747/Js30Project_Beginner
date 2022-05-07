@@ -73,8 +73,11 @@ console.log(countries.findIndex((country) => country == 'Norway'))
 
 // 1-26
 console.log(countries.findIndex((country) => country == 'Russia'))
-*/
+
 
 //LEVEL 2
 // 2-1
 console.log(products.map((product) => product.price).reduce((acc, cur) => acc += Number(cur)))
+*/
+// 2-2
+console.log(products.reduce((acc, cur) => acc += Number(cur.price),0))
