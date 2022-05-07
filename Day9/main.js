@@ -24,5 +24,23 @@ console.log(numbers.map((number) => number**2))
 console.log(names.map((name) => name.toUpperCase()))
 
 products.map((product) => console.log(`${product.product} costs ${product.price}`))
+
+console.log(countries.filter((country) => country.includes('land')))
+
+console.log(countries.filter((country) => country.length == 6))
+
+console.log(countries.filter((country) => country.length >= 6))
+
+console.log(countries.filter((country) => country.startsWith("E")))
 */
 
+// 1-16 
+function getStringLists(arr){
+    const cleanArr = []
+    for(let i = 0; i < arr.length; i++){
+        if(typeof(arr[i]) === 'string'){
+            cleanArr.push(arr[i])
+        }
+    }
+    return cleanArr
+}
