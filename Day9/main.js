@@ -1,3 +1,5 @@
+import { countries_data } from "./countries_data.js"
+
 const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand']
 const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -87,9 +89,23 @@ console.log(products.reduce((acc, cur) => acc += Number(cur.price),0))
 function categorizeCountries(arr, pattern){
     return arr.filter((country) => country.includes(pattern))
 }
-*/
+
 
 //LEVEL 3
 // 3-1
 import {countries_data} from './countries_data.js'
-console.log(countries_data)
+console.log(countries_data.sort((a, b) => {
+    let fa = a.name.toLowerCase()
+    let fb = b.name.toLowerCase()
+    if(fa > fb){
+        return -1
+    }
+    if(fa < fb){
+        return 1
+    }
+    return 0
+}))
+
+
+console.log(countries_data.sort((a, b) => b.population - a.population)[1])
+*/
