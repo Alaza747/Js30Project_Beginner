@@ -78,6 +78,13 @@ console.log(countries.findIndex((country) => country == 'Russia'))
 //LEVEL 2
 // 2-1
 console.log(products.map((product) => product.price).reduce((acc, cur) => acc += Number(cur)))
-*/
+
 // 2-2
 console.log(products.reduce((acc, cur) => acc += Number(cur.price),0))
+*/
+
+// 2-3
+function categorizeCountries(arr, pattern){
+    return arr.filter((country) => country.includes(pattern))
+}
+
