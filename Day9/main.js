@@ -53,10 +53,17 @@ let sum = numbers.reduce((acc, cur) => acc + cur, 0)
 // 1-18 not done
 let abc = countries.reduce((acc, cur) => acc += cur, '')
 console.log(abc)
-*/
+
 
 // 1-20
 console.log(names.some((name) => name.length > 7))
 
 // 1-21
 console.log(countries.every((country) => country.includes('land')))
+*/
+
+// 1-23
+console.log(countries.find((country) => country.length == 6))
+
+// 1-24
+console.log(countries.findIndex((country) => country.length == 6))
