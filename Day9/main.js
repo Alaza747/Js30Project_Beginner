@@ -81,10 +81,15 @@ console.log(products.map((product) => product.price).reduce((acc, cur) => acc +=
 
 // 2-2
 console.log(products.reduce((acc, cur) => acc += Number(cur.price),0))
-*/
+
 
 // 2-3
 function categorizeCountries(arr, pattern){
     return arr.filter((country) => country.includes(pattern))
 }
+*/
 
+//LEVEL 3
+// 3-1
+import {countries_data} from './countries_data.js'
+console.log(countries_data)
