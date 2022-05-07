@@ -44,7 +44,19 @@ function getStringLists(arr){
     }
     return cleanArr
 }
-*/
+
 
 // 1-17
 let sum = numbers.reduce((acc, cur) => acc + cur, 0)
+
+
+// 1-18 not done
+let abc = countries.reduce((acc, cur) => acc += cur, '')
+console.log(abc)
+*/
+
+// 1-20
+console.log(names.some((name) => name.length > 7))
+
+// 1-21
+console.log(countries.every((country) => country.includes('land')))
