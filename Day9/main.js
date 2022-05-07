@@ -12,4 +12,17 @@ const products = [
 
 
 const eachUppercase = countries.map((country) => country.toUpperCase())
-console.log(eachUppercase)
+/*
+countries.forEach(country => {
+   console.log(country) 
+});
+
+console.log(countries.map((country) => country.length))
+
+console.log(numbers.map((number) => number**2))
+
+console.log(names.map((name) => name.toUpperCase()))
+
+products.map((product) => console.log(`${product.product} costs ${product.price}`))
+*/
+
