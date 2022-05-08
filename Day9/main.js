@@ -109,3 +109,23 @@ console.log(countries_data.sort((a, b) => {
 
 console.log(countries_data.sort((a, b) => b.population - a.population)[1])
 */
+
+// 3-2
+const count = {}
+
+function mostSpokenLanguages(numLang){
+    for(const i of countries_data){
+        for(const x of i.languages){
+            if(count[x]){
+                count[x] ++
+            } else {
+                count[x] = 1
+            }
+        }
+    }
+    let sortedLang = Object.entries(count).sort((a, b) => b[1] - a[1])
+    for (let a = 0; a < numLang; a++){
+        console.log(sortedLang[a])
+    } 
+}
+console.log(mostSpokenLanguages(5))
