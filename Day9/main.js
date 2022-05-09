@@ -129,10 +129,9 @@ function mostSpokenLanguages(numLang){
     } 
 }
 mostSpokenLanguages(10)
-*/
+
 
 // 3-3
-
 const countries_num = []
 
 function mostPopulatedCountries(numCountries){
@@ -147,3 +146,62 @@ function mostPopulatedCountries(numCountries){
 }
 
 mostPopulatedCountries(10)
+*/
+
+// 3-4
+const ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
+
+let statistics = {
+    sortArr: function() {
+        let sortedArr = ages.sort((a, b) => a - b)
+        return (sortedArr)
+    },
+
+    count: function() {
+        return(ages.length)
+    },
+
+    sum: function() {
+        let result = 0
+        for (let i of ages){
+            result += i
+        }
+        return(result)
+    },
+
+    min: function() {
+        return(this.sortArr()[0])
+    },
+
+    max: function() {
+        return(this.sortArr()[this.sortArr().length-1])
+    },
+
+    range: function() {
+        let sorted = ages.sort((a, b) => a - b)
+        return(sorted[sorted.length-1] - sorted[0])
+    },
+
+    mean: function() {
+        return (this.sum()/this.count())
+    },
+
+    median: function() {
+        let medianIndex = this.count() / 2
+        if ( medianIndex % 2 == 0){
+            return (this.sortArr()[medianIndex])
+        } else {
+            return ((this.sortArr()[medianIndex-0.5] + this.sortArr()[medianIndex+0.5])/2)
+        }
+        
+    }
+}
+
+console.log('Sorted Array is:', statistics.sortArr())
+console.log('Count:', statistics.count()) // 25
+console.log('Sum: ', statistics.sum()) // 744
+console.log('Min: ', statistics.min()) // 24
+console.log('Max: ', statistics.max()) // 38
+console.log('Range: ', statistics.range()) // 14
+console.log('Mean: ', statistics.mean()) // 30
+console.log('Median: ',statistics.median()) // 29
