@@ -109,7 +109,7 @@ console.log(countries_data.sort((a, b) => {
 
 console.log(countries_data.sort((a, b) => b.population - a.population)[1])
 
-*/
+
 // 3-2
 const count = {}
 
@@ -128,7 +128,22 @@ function mostSpokenLanguages(numLang){
         console.log(sortedLang[a])
     } 
 }
-mostSpokenLanguages(5)
-
+mostSpokenLanguages(10)
+*/
 
 // 3-3
+
+const countries_num = []
+
+function mostPopulatedCountries(numCountries){
+    for (const i of countries_data){
+        let test = {}
+        test['country'] = i.name
+        test['population'] = i.population
+        countries_num.push(test)
+    }
+    let result = countries_num.sort((a, b) => b['population'] - a['population'])
+    console.log(result.slice(0,numCountries))
+}
+
+mostPopulatedCountries(10)
