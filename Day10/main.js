@@ -4,4 +4,10 @@
 let a = new Set()
 */
 // 1-2
-console.log(a)
+let a = [1,2,3,4,5,6,7,8,9,10]
+let b = new Set()
+for(const x of a){
+    b.add(x)
+}
+
+console.log(b)
