@@ -10,4 +10,6 @@ for(const x of a){
     b.add(x)
 }
 
+// 1-3
+b.delete(5)
 console.log(b)
