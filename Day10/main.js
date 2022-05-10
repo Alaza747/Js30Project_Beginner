@@ -37,5 +37,10 @@ let c = [...a, ...b]
 let A = new Set(a)
 let B = new Set(b)
 let C = new Set(c)
-console.log(C)
+
+
+// 2-2 
+let d = a.filter((number) => B.has(number))
+let D = new Set(d)
+console.log(D)
 
