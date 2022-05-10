@@ -20,9 +20,22 @@ b.clear()
 // 1-5
 let c = ["a", "b", "c", "d", "e"]
 let b = new Set(c)
-*/
+
 
 // 1-6
 let c = [["Finland", 7],[ "Sweden", 6]]
 let d = new Map(c)
-console.log(d)
+*/
+
+// LEVEL 2
+
+// 2-1
+const a = [4, 5, 8, 9]
+const b = [3, 4, 5, 7]
+let c = [...a, ...b]
+
+let A = new Set(a)
+let B = new Set(b)
+let C = new Set(c)
+console.log(C)
+
