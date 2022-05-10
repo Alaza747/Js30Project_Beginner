@@ -12,4 +12,7 @@ for(const x of a){
 
 // 1-3
 b.delete(5)
+
+// 1-4
+b.clear()
 console.log(b)
