@@ -15,9 +15,14 @@ b.delete(5)
 
 // 1-4
 b.clear()
-*/
+
 
 // 1-5
 let c = ["a", "b", "c", "d", "e"]
 let b = new Set(c)
-console.log(b)
+*/
+
+// 1-6
+let c = [["Finland", 7],[ "Sweden", 6]]
+let d = new Map(c)
+console.log(d)
