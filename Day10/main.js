@@ -46,5 +46,13 @@ let D = new Set(d)
 // LEVEL 3
 // 3-1
 import {countries_data} from './countries_data.js'
-console.log(countries_data[0])
+
+let a = []
+for (const x of countries_data){
+    for(const i of x.languages){
+        a.push(i)
+    }    
+}
+let A = new Set(a)
+console.log(A)
 
