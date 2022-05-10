@@ -25,7 +25,7 @@ let b = new Set(c)
 // 1-6
 let c = [["Finland", 7],[ "Sweden", 6]]
 let d = new Map(c)
-*/
+
 
 // LEVEL 2
 
@@ -42,5 +42,9 @@ let C = new Set(c)
 // 2-2 
 let d = a.filter((number) => B.has(number))
 let D = new Set(d)
-console.log(D)
+*/
+// LEVEL 3
+// 3-1
+import {countries_data} from './countries_data.js'
+console.log(countries_data[0])
 
