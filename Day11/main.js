@@ -64,3 +64,14 @@ console.log(fin, est, swe, den, nor)
 // 1-3 
 let {width: w, height: h, area: a, perimeter: p}= rectangle
 console.log(w, h, a, p)
+
+// Level 2
+
+// 2-1
+for (const k of users){
+    console.log(Object.keys(k))
+}
+
+for (const {name: a, scores: b,skills: c,age: d} of users){
+    console.log(a, b, c, d)
+}
