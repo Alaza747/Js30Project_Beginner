@@ -51,7 +51,7 @@ const users = [
     age:20
     }
 ]
-
+/*
 // Level 1
 
 // 1-1
@@ -83,7 +83,7 @@ for (const {name: a, scores: b,skills: c,age: d} of users){
 // Level 3
 
 // 3-1
-/*
+
 for (const {name, capital, population, languages} of countries_data){
     console.log(name, capital, population, languages)
 }
@@ -93,5 +93,26 @@ for (const {name, capital, population, languages} of countries_data){
 const student = ['David', ['HTML', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
 let [name, skills, [,,jsScore, reactScore]] = student
 
-console.log(name, skills, jsScore, reactScore)
+//console.log(name, skills, jsScore, reactScore)
 
+// 3-3
+const students = [
+    ['David', ['HTML', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
+    ['John', ['HTML', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
+]
+
+const convertArrayToObject = stud => {
+    const resArr = []
+    const result = {
+        name: undefined,
+        skills: undefined,
+        scores: undefined
+    }
+    for(const a of stud){
+        const copiedResult = {...result, name: a[0], skills: a[1], scores: a[2]}
+        resArr.push(copiedResult) 
+    }
+    console.log(resArr)
+}
+
+convertArrayToObject(students)
