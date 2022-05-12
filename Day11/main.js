@@ -60,3 +60,7 @@ console.log(e, pi, gravity, humanBodyTemp, waterBoilingTemp)
 // 1-2
 let [fin, est, swe, den, nor] = countries
 console.log(fin, est, swe, den, nor)
+
+// 1-3 
+let {width: w, height: h, area: a, perimeter: p}= rectangle
+console.log(w, h, a, p)
