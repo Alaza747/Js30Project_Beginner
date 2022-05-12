@@ -53,3 +53,6 @@ const users = [
 
 // Level 1
 
+// 1-1
+let [e, pi, gravity, humanBodyTemp, waterBoilingTemp] = constants
+console.log(e, pi, gravity, humanBodyTemp, waterBoilingTemp)
