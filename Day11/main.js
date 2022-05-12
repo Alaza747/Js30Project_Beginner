@@ -1,3 +1,4 @@
+import {countries_data} from './countries_data.js'
 const constants = [2.72, 3.14, 9.81, 37, 100]
 const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
 const rectangle = {
@@ -78,3 +79,11 @@ for (const {name: a, scores: b,skills: c,age: d} of users){
         console.log(a, b, c, d)
     }
 }
+
+// Level 3
+
+// 3-1
+for (const {name, capital, population, languages} of countries_data){
+    console.log(name, capital, population, languages)
+}
+
