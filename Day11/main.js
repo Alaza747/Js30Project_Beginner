@@ -83,7 +83,15 @@ for (const {name: a, scores: b,skills: c,age: d} of users){
 // Level 3
 
 // 3-1
+/*
 for (const {name, capital, population, languages} of countries_data){
     console.log(name, capital, population, languages)
 }
+*/
+
+// 3-2 
+const student = ['David', ['HTML', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
+let [name, skills, [,,jsScore, reactScore]] = student
+
+console.log(name, skills, jsScore, reactScore)
 
