@@ -72,6 +72,9 @@ for (const k of users){
     console.log(Object.keys(k))
 }
 
+// 2-2
 for (const {name: a, scores: b,skills: c,age: d} of users){
-    console.log(a, b, c, d)
+    if(c.length < 2) {
+        console.log(a, b, c, d)
+    }
 }
