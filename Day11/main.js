@@ -56,3 +56,7 @@ const users = [
 // 1-1
 let [e, pi, gravity, humanBodyTemp, waterBoilingTemp] = constants
 console.log(e, pi, gravity, humanBodyTemp, waterBoilingTemp)
+
+// 1-2
+let [fin, est, swe, den, nor] = countries
+console.log(fin, est, swe, den, nor)
