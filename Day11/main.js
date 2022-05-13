@@ -139,3 +139,7 @@ const student = {
       dataScience:['Python', 'R', 'D3.js']
     }
   }
+
+const a = {...student}
+a.skills.frontEnd.push({skill: 'Bootstrap', level: 8})
+console.log(a.skills.frontEnd)
