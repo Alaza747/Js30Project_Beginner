@@ -142,4 +142,5 @@ const student = {
 
 const a = {...student}
 a.skills.frontEnd.push({skill: 'Bootstrap', level: 8})
-console.log(a.skills.frontEnd)
+a.skills.backEnd.push({skill: 'Express', level: 9})
+console.log(a.skills)
