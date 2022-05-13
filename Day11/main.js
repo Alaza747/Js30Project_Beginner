@@ -144,5 +144,5 @@ const a = {...student}
 a.skills.frontEnd.push({skill: 'Bootstrap', level: 8})
 a.skills.backEnd.push({skill: 'Express', level: 9})
 a.skills.dataBase.push({skill: 'SQL', level: 8})
-
+a.skills.dataScience.push('SQL')
 console.log(a.skills)
