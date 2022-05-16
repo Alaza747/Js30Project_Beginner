@@ -10,3 +10,4 @@ let pattern = /\d+/g
 let result = income.match(pattern).map((a) => parseInt(a, 10)).reduce((sum, a) => sum += a)
 console.log(result)
 
+// 1-2
