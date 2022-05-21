@@ -17,18 +17,7 @@ let test2 = "first-name"
 let test3 = "1first_name"
 let test4 = "firstname"
 let pattern = /[^A-Z0-9]+/g
-console.log(test.match(pattern))
-console.log(test2.match(pattern))
-console.log(test3.match(pattern))
-console.log(test4.match(pattern))
-
-/*
-function is_valid_variable(input){
-    //return input
-}
-
-is_valid_variable('first_name') // True
-is_valid_variable('first-name') // False
-is_valid_variable('1first_name') // False
-is_valid_variable('firstname') // True
-*/
+console.log(pattern.test(test))
+console.log(pattern.test(test2))
+console.log(pattern.test(test3))
+console.log(pattern.test(test4))
