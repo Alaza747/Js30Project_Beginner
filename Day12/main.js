@@ -16,7 +16,7 @@ let test = "first_name"
 let test2 = "first-name"
 let test3 = "1first_name"
 let test4 = "firstname"
-let pattern = /[^A-Z0-9]+/g
+let pattern = /^[a-z]/
 console.log(pattern.test(test))
 console.log(pattern.test(test2))
 console.log(pattern.test(test3))
