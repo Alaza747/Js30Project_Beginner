@@ -22,3 +22,15 @@ console.log(pattern.test(test2))
 console.log(pattern.test(test3))
 console.log(pattern.test(test4))
 */
+
+// Level 2
+
+// 2-1
+paragraph = `I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`
+
+function tenMostFrequentWords(input){
+    let pattern = //
+}
+
+
+console.log(tenMostFrequentWords(paragraph))
