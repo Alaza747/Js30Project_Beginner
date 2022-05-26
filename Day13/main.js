@@ -129,7 +129,6 @@ for (let i = 0; i <= 10; i += 1) {
   console.assert(i % 2 === 0, { number: i, errorMessage: errorMessage })
 }
 
-*/
 
 //console.group
 
@@ -189,3 +188,13 @@ console.group('Users')
 console.log(user)
 console.log(users)
 console.groupEnd()
+*/
+
+//console.count()
+
+const func = () => {
+    console.count('Function has been called')
+  }
+  func()
+  func()
+  func()
