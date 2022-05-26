@@ -227,3 +227,6 @@ console.assert(10>2*10, "That\'s not true.")
 
 //2-2
 console.warn("THIS IS A WARNING")
+
+//2-3
+console.error("EROROROROOR")
