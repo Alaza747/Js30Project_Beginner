@@ -218,8 +218,12 @@ console.table(countries)
 
 //1-2
 console.table(countries_data)
-*/
+
 
 // Level 2
 //2-1
 console.assert(10>2*10, "That\'s not true.")
+*/
+
+//2-2
+console.warn("THIS IS A WARNING")
