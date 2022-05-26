@@ -18,6 +18,12 @@ console.warn(
 )
 console.warn('Warning is different from error')
 
+//console.error()
+
+console.error('This is an error message')
+console.error('We all make mistakes')
+
+
 //console.table()
 
 const names = ['Asabeneh', 'Brook', 'David', 'John']
