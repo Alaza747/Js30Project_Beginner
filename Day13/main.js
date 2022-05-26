@@ -110,8 +110,21 @@ const countries = [
   })
   console.timeEnd('forEach loop')
 
-*/
+
 //console.info()
 console.info('30 Days Of JavaScript challenge is trending on Github')
 console.info('30 Days Of fullStack challenge might be released')
 console.info('30 Days Of HTML and CSS challenge might be released')
+*/
+
+
+//console.assert()
+
+console.assert(4 > 3, '4 is greater than 3') // no result
+console.assert(3 > 4, '3 is not greater than 4') // Assertion failed: 3 is not greater than 4
+
+for (let i = 0; i <= 10; i += 1) {
+  let errorMessage = `${i} is not even`
+  console.log('the # is ' + i)
+  console.assert(i % 2 === 0, { number: i, errorMessage: errorMessage })
+}
