@@ -1,3 +1,5 @@
+import { countries_data } from "./countries_data.js";
+
 /*
 
 //%c styling console messages
@@ -199,7 +201,7 @@ const func = () => {
   func()
   func()
 
-*/
+
 
 
 // Level 1
@@ -212,3 +214,8 @@ const countries = [
 ]
 
 console.table(countries)
+*/
+
+//1-2
+console.table(countries_data)
+
