@@ -83,7 +83,7 @@ const countries = [
   ]
   console.table(users)
 
-*/
+
 //console.time() 
 
 const countries = [
@@ -109,3 +109,9 @@ const countries = [
     console.log(name, city)
   })
   console.timeEnd('forEach loop')
+
+*/
+//console.info()
+console.info('30 Days Of JavaScript challenge is trending on Github')
+console.info('30 Days Of fullStack challenge might be released')
+console.info('30 Days Of HTML and CSS challenge might be released')
