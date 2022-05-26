@@ -188,7 +188,7 @@ console.group('Users')
 console.log(user)
 console.log(users)
 console.groupEnd()
-*/
+
 
 //console.count()
 
@@ -198,3 +198,17 @@ const func = () => {
   func()
   func()
   func()
+
+*/
+
+
+// Level 1
+//1-1
+
+const countries = [
+    ['Finland', 'Helsinki'],
+    ['Sweden', 'Stockholm'],
+    ['Norway', 'Oslo']
+]
+
+console.table(countries)
