@@ -119,3 +119,36 @@ class Student extends Person {
 const s1 = new Student()
 console.log(s1)
 s1.saySomething()
+
+// Level 1
+
+//1-1
+class Animal{
+    constructor(
+        name = randName,
+        age = randAge,
+        color = randColor,
+        legs = randLegs
+    ) {
+        this.name = name
+        this.age = age
+        this.color = color
+        this.legs = legs
+    }
+
+    get info(){
+        if(this.age < 2){
+            this.age = 1 + ' year old'
+        } else {
+            this.age = this.age + ' years old'
+        }
+
+        let allInfo = `This is a ${this.name}, it is ${this.age}, it's color is ${this.color} and it has ${this.legs} legs`
+        return allInfo
+    }
+}
+
+const dog = new Animal("Dog", 5, "brown", 4)
+const cat = new Animal("Cat", 1, "black", 4)
+console.log(dog.info)
+console.log(cat.info)
