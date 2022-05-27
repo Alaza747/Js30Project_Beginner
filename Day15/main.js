@@ -55,6 +55,30 @@ class Person {
         this.skills.push(skill)
     }
 
+//static methods
+    static showDateTime() {
+        let now = new Date()
+        let year = now.getFullYear()
+        let month = now.getMonth() + 1
+        let day = now.getDate()
+        let hour = now.getHours()
+        let minute = now.getMinutes()
+        let second = now.getSeconds()
+        if (minute < 10){
+            minute = '0' + minute
+        }
+        if (hour < 10){
+            hour = '0' + hour
+        }
+        if (second < 10){
+            second = '0' + second
+        }
+        let dateMonthYear = day + '/' + month + '/' + year
+        let time = hour + ':' + minute + ':' + second
+        let fullTime = `${dateMonthYear} \n${time}`
+        return fullTime
+    }
+
 }
 
 //initializing a class
@@ -75,3 +99,5 @@ person.addPoints = 4
 person.addSkill = "JS"
 console.log(person.score)
 console.log(person.skills)
+
+console.log(Person.showDateTime())
