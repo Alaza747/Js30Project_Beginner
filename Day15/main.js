@@ -148,7 +148,18 @@ class Animal{
     }
 }
 
-const dog = new Animal("Dog", 5, "brown", 4)
-const cat = new Animal("Cat", 1, "black", 4)
-console.log(dog.info)
-console.log(cat.info)
+class Dog extends Animal{
+    constructor(name, age, color, legs, breed){
+        super(name, age, color, legs = 4)
+        this.breed = breed
+    }
+
+    get dogInfo(){
+        return `${this.info} and his breed is ${this.breed}`
+    }
+}
+
+
+const spitz = new Dog("Deb", 2, "white", ...[,], "pomeranian")
+
+console.log(spitz.dogInfo)
