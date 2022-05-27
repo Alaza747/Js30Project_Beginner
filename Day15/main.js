@@ -101,3 +101,15 @@ console.log(person.score)
 console.log(person.skills)
 
 console.log(Person.showDateTime())
+
+
+//Inheritance
+class Student extends Person {
+    saySomething(){
+        console.log('I am a person, but also a student')
+    }
+}
+
+const s1 = new Student()
+console.log(s1)
+s1.saySomething()
