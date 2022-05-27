@@ -105,6 +105,12 @@ console.log(Person.showDateTime())
 
 //Inheritance
 class Student extends Person {
+    constructor(firstName, lastName, age, country, city, score, skills, gender){
+//super() for taking from the parent class
+        super(firstName, lastName, age, country, city, score, skills)
+        this.gender = gender
+    }
+
     saySomething(){
         console.log('I am a person, but also a student')
     }
