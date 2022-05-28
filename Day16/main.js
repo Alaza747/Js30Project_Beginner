@@ -133,4 +133,8 @@ console.log(result5)
 
 // Level 3
 //3-1: Parse the txt JSON to object.
+const result6 = JSON.parse(txt)
+console.log(result6)
+
+
 //3-2: Find the user who has many skills from the variable stored in txt.
