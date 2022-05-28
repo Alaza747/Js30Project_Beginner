@@ -128,7 +128,8 @@ console.log(result4)
 
 // Level 2
 //2-1: Stringify the students object with only firstName, lastName and skills properties
-
+const result5 = JSON.stringify(student,['firstName','lastName', 'age'], 4)
+console.log(result5)
 
 // Level 3
 //3-1: Parse the txt JSON to object.
