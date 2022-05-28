@@ -205,11 +205,17 @@ Total Expenses: ${totalExp} euros.`
     }
 
     
-    /* 
-    addIncome{}
     
-    addExpense{} 
-    
+    addIncome(a){
+        this.income.push(a)
+        return this.income 
+    }
+
+    addExpense(a){
+        this.expenses.push(a)
+        return this.expenses 
+    }
+/*
     accountBalance{}
     */
 }
@@ -219,4 +225,5 @@ const anton = new PersonAccount('Anton', 'Laza', [2,5,3,7,8], [2,6,3,2,6,1])
 console.log(anton.income)
 console.log(anton.totalIncome())
 console.log(anton.totalExpense())
-console.log(anton.accountInfo())
+console.log(anton.addIncome(7))
+console.log(anton.addExpense(7))
