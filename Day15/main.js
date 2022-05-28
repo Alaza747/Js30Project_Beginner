@@ -179,7 +179,7 @@ class PersonAccount{
     totalIncome() {
         let totalIncome = 0
         totalIncome = this.income.reduce((sum, a) => sum + a, 0)
-        totalIncome = `${this.firstName}'s total income is ${totalIncome} euros.`
+        //totalIncome = `${this.firstName}'s total income is ${totalIncome} euros.`
         return totalIncome
     }
      
@@ -187,7 +187,8 @@ class PersonAccount{
     totalExpense() { 
         let totalExpense = 0
         totalExpense = this.expenses.reduce((sum, a) => sum + a, 0)
-        totalExpense = `${this.firstName}'s total expenses are ${totalExpense} euros.`
+        totalExpense *= -1
+        //totalExpense = `${this.firstName}'s total expenses are ${totalExpense} euros.`
         return totalExpense
     }
     
@@ -215,15 +216,16 @@ Total Expenses: ${totalExp} euros.`
         this.expenses.push(a)
         return this.expenses 
     }
-/*
-    accountBalance{}
-    */
+
+    accountBalance(){
+        let balance = 0
+        balance += this.totalIncome()
+        balance += this.totalExpense() 
+        return balance
+    }
+    
 }
 
 const anton = new PersonAccount('Anton', 'Laza', [2,5,3,7,8], [2,6,3,2,6,1])
 
-console.log(anton.income)
-console.log(anton.totalIncome())
-console.log(anton.totalExpense())
-console.log(anton.addIncome(7))
-console.log(anton.addExpense(7))
+console.log(anton.accountBalance())
