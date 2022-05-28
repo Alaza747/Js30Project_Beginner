@@ -1,5 +1,5 @@
 import { countries_data } from "./countries_data.js";
-
+/*
 //creating a Class
 class Person {
 
@@ -163,3 +163,46 @@ class Dog extends Animal{
 const spitz = new Dog("Deb", 2, "white", ...[,], "pomeranian")
 
 console.log(spitz.dogInfo)
+*/
+
+// Level 3
+//3-1
+
+class PersonAccount{
+    constructor(firstName, lastName, incomes, expenses) {
+        this.firstName = firstName,
+        this.lastname = lastName, 
+        this.income = incomes, 
+        this.expenses = expenses
+    }
+  
+    totalIncome() {
+        let totalIncome = 0
+        totalIncome = this.income.reduce((sum, a) => sum + a, 0)
+        totalIncome = `${this.firstName}'s total income is ${totalIncome} euros.`
+        return totalIncome
+    }
+     
+     
+    totalExpense() { 
+        let totalExpense = 0
+        totalExpense = this.expenses.reduce((sum, a) => sum + a, 0)
+        totalExpense = `${this.firstName}'s total expenses are ${totalExpense} euros.`
+        return totalExpense
+    }
+/*     
+    accountInfo{}
+    
+    addIncome{}
+    
+    addExpense{} 
+    
+    accountBalance{}
+    */
+}
+
+const anton = new PersonAccount('Anton', 'Laza', [2,5,3,7,8], [2,6,3,2,6,1])
+
+console.log(anton.income)
+console.log(anton.totalIncome())
+console.log(anton.totalExpense())
