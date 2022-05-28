@@ -110,6 +110,22 @@ const txt = `{
 
 
 // Level 1
-//1-1
+//1-1: Change skills array to JSON using JSON.stringify()
 const result = JSON.stringify(skills,undefined,4)
 console.log(result)
+
+//1-2: Stringify the age variable
+const result2 = JSON.stringify(age,undefined,4)
+console.log(result2)
+
+
+//1-3: Stringify the isMarried variable
+//1-4: Stringify the student object
+
+// Level 2
+//2-1: Stringify the students object with only firstName, lastName and skills properties
+
+
+// Level 3
+//3-1: Parse the txt JSON to object.
+//3-2: Find the user who has many skills from the variable stored in txt.
