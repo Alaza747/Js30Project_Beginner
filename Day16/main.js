@@ -123,6 +123,8 @@ const result3 = JSON.stringify(isMarried,undefined,4)
 console.log(result3)
 
 //1-4: Stringify the student object
+const result4 = JSON.stringify(student,undefined,4)
+console.log(result4)
 
 // Level 2
 //2-1: Stringify the students object with only firstName, lastName and skills properties
