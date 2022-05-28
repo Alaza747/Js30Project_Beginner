@@ -138,3 +138,15 @@ console.log(result6)
 
 
 //3-2: Find the user who has many skills from the variable stored in txt.
+for (const a in result6){
+    for(const b in result6[a]){
+        //console.log(result6[a][b])
+        if(Array.isArray(result6[a][b])){
+            if(result6[a][b].length > 6){
+                console.log(`${a} has more than 6 skills.`)
+            }
+        }
+    }
+}
+
+
