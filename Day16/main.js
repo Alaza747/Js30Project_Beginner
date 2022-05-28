@@ -118,8 +118,10 @@ console.log(result)
 const result2 = JSON.stringify(age,undefined,4)
 console.log(result2)
 
-
 //1-3: Stringify the isMarried variable
+const result3 = JSON.stringify(isMarried,undefined,4)
+console.log(result3)
+
 //1-4: Stringify the student object
 
 // Level 2
