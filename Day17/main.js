@@ -10,14 +10,14 @@ let skills = [
 { tech: 'MongoDB', level: 8 }
 ]
 
-//important to stringify first or it will be destructured
-let skillJSON = JSON.stringify(skills)
-localStorage.setItem('skills', skillJSON)
-localStorage.setItem('Age', 200)
-let html = localStorage.getItem('Age')
 
-console.log(html)
 
-localStorage.clear()
+// Level 1
+// 1-1
+localStorage.setItem('firstname', 'Anton')
+localStorage.setItem('lastname', 'Laza')
+localStorage.setItem('age', 23)
+localStorage.setItem('country', 'AT')
 
 console.log(localStorage)
+console.log(localStorage.key(0))
