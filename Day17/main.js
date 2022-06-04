@@ -17,3 +17,7 @@ localStorage.setItem('Age', 200)
 let html = localStorage.getItem('Age')
 
 console.log(html)
+
+localStorage.clear()
+
+console.log(localStorage)
