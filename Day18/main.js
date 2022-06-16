@@ -139,7 +139,9 @@ const fetchCatNames = async () => {
 fetchCatNames()
 //console.log(catNames)
 
-// 2-2
+// LEVEL 3
+
+// 3-1
 const catsWeight = []
 const fetchCatWeights = async() => {
     try {
