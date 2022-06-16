@@ -21,3 +21,5 @@ localStorage.setItem('country', 'AT')
 
 console.log(localStorage)
 console.log(localStorage.key(0))
+
+student
