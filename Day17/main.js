@@ -41,4 +41,53 @@ const student = {
 
 const student2 = JSON.stringify(student, undefined, 2)
 localStorage.setItem('student', student2)
-console.log(localStorage)
+
+
+// Level 3
+// 3-1
+const personAccount = {
+    firstName: 'Anton',
+    lastName: 'Laza',
+    incomes: [1000, 2000, 3000],
+    expenses: [500, 600, 700],
+
+    totalIncome: function () {
+        let total = 0;
+        for (let i = 0; i < this.incomes.length; i++) {
+            total += this.incomes[i]
+        }
+        return total
+    },
+
+    totalExpenses: function () {
+        let total = 0;
+        for (let i = 0; i < this.expenses.length; i++) {
+            total += this.expenses[i]
+        }
+        return total
+    },
+
+    accountInfo: function () {
+        return `${this.firstName} ${this.lastName} has a balance of ${this.totalIncome() - this.totalExpenses()}`
+    },
+
+    addIncome: function (income) {
+        this.incomes.push(income)
+        return(`${income} has been added to the incomes`)
+    },
+
+    addExpense: function (expense) {
+        this.expenses.push(expense)
+        return(`${expense} has been added to the expenses`)
+    },
+
+    getBalance: function () {
+        return this.totalIncome() - this.totalExpenses()
+    }
+}
+
+localStorage.clear()
+localStorage.setItem('personAccount', JSON.stringify(personAccount, undefined, 2))
+console.log(localStorage.getItem('personAccount'))
+
+
