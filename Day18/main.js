@@ -17,7 +17,7 @@ const callback = (error, data) => {
     }
 }
 
-doSomething(callback);
+//doSomething(callback);
 
 
 const doSomething2 = (callback) => {
@@ -35,7 +35,27 @@ const callback2 = (error, data) => {
     }
 }
 
-doSomething2(callback2);
+//doSomething2(callback2);
 
 
 // Promises
+
+const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        const skills = ['Html', 'Css', 'Js', 'React', 'Redux', 'Node', 'MongoDB'];
+        if (skills.length > 0) {
+            resolve(skills);
+        } else {
+            reject('No skills');
+        }
+    }, 2000);
+});
+
+promise.then((skills) => {
+        console.log(skills);})
+    .catch((error) => {
+        console.log(error);
+    });
+
+
+
