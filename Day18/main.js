@@ -50,12 +50,28 @@ const promise = new Promise((resolve, reject) => {
         }
     }, 2000);
 });
-
+/*
 promise.then((skills) => {
         console.log(skills);})
     .catch((error) => {
         console.log(error);
     });
+*/
+
+// Fetch API
+
+const url = 'https://restcountries.com/v2/all';
+fetch(url)
+    .then((response) => {
+        return response.json();
+    })
+    .then((data) => {
+        console.log(data);
+    })
+
+    .catch((error) => {
+        console.log(error);
+    });
 
 
-
+// Async/Await
