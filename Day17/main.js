@@ -11,9 +11,10 @@ let skills = [
 ]
 
 
-
 // Level 1
 // 1-1
+
+/*
 localStorage.setItem('firstname', 'Anton')
 localStorage.setItem('lastname', 'Laza')
 localStorage.setItem('age', 23)
@@ -21,5 +22,23 @@ localStorage.setItem('country', 'AT')
 
 console.log(localStorage)
 console.log(localStorage.key(0))
+*/
 
-student
+// Level 2
+// 2-1
+
+localStorage.removeItem('firstname')
+localStorage.removeItem('lastname')
+localStorage.removeItem('age')
+localStorage.removeItem('country')
+
+const student = {
+    lastName: "Laza",
+    firstName: 'Anton',
+    age: 23,
+    country: 'AT'
+}
+
+const student2 = JSON.stringify(student, undefined, 2)
+localStorage.setItem('student', student2)
+console.log(localStorage)
