@@ -137,4 +137,24 @@ const fetchCatNames = async () => {
     }  
 }
 fetchCatNames()
-console.log(catNames)
+//console.log(catNames)
+
+// 2-2
+const catsWeight = []
+const fetchCatWeights = async() => {
+    try {
+        const response = await fetch(catsAPI)
+        const data = await response.json()
+        for (let i = 0; i < data.length; i++){
+            let x = data[i].weight.metric
+            let min = x.match(/[0-9]+/g)
+            let avg = (parseInt(min[1]) + parseInt(min[0])) / 2
+            catsWeight.push(avg)
+        }
+    } catch(err) {
+        console.log(err)
+    }
+}
+
+fetchCatWeights()
+console.log(catsWeight)
