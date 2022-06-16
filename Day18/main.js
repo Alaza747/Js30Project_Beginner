@@ -60,7 +60,10 @@ promise.then((skills) => {
 
 // Fetch API
 
+
 const url = 'https://restcountries.com/v2/all';
+
+/*
 fetch(url)
     .then((response) => {
         return response.json();
@@ -73,5 +76,65 @@ fetch(url)
         console.log(error);
     });
 
+*/
 
 // Async/Await
+const square = async function (number) {
+    return number ** 2;
+}
+
+const value = await square(3)
+//console.log(value)
+
+
+// same example as with Fetch API but this time with Async/Await
+/*
+const fetchData = async () => {
+    try {
+        const response = await fetch(url)
+        const countries = await response.json()
+        console.log(countries)
+    } catch (err) {
+        console.error(err)
+    }
+}
+
+console.log('===== async and await');
+fetchData()
+*/
+
+// Level 1
+const countriesAPI = 'https://restcountries.com/v2/all'
+const catsAPI = 'https://api.thecatapi.com/v1/breeds'
+/*
+fetch(countriesAPI)
+    .then((response) => {
+        return response.json() 
+    })
+    .then((data) => {
+        for (let i = 0; i < data.length; i++) {
+            console.log(data[i].name, data[i].capital, data[i].population, data[i].area)
+        } 
+    })
+    .catch((error) => {
+        console.log(error)
+    })
+*/
+
+// Level 2
+// 2-1 
+const catNames = []
+
+const fetchCatNames = async () => {
+    try {
+        const response = await fetch(catsAPI)
+        const catsData = await response.json()
+        for (let i = 0; i < catsData.length; i++) {
+            catNames.push(catsData[i].name)
+        }
+    } catch (err) {
+        console.error(err)
+    }  
+}
+fetchCatNames()
+console.log(catNames)
