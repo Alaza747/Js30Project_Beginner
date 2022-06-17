@@ -159,4 +159,35 @@ const fetchCatWeights = async() => {
 }
 
 fetchCatWeights()
-console.log(catsWeight)
+//console.log(catsWeight)
+
+// 3-2
+// Read the countries api and find out the 10 largest countries
+
+const area = []
+
+const fetchCountries = async() => {
+    try{   
+        let response = await fetch(countriesAPI)
+        let data = await response.json()
+        for(let i = 0; i < data.length; i++){
+            if(data[i].area == undefined){
+                data[i].area = 0
+            }
+            area.push({
+                "country": data[i].name,
+                "area" : data[i].area})
+        }
+        area.sort((a, b) => b.area - a.area)
+        console.log("TOP 10 Countries by Area")
+        for (let x = 0; x < 10; x++){
+            console.log(`${x} =`, area[x])
+        }
+    }
+    catch(err) {
+        console.log(err)
+    }
+}
+
+fetchCountries()
+
