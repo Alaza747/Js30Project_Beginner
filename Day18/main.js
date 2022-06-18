@@ -189,5 +189,32 @@ const fetchCountries = async() => {
     }
 }
 
-fetchCountries()
+//fetchCountries()
 
+// 3-3
+// Read the countries api and count total number of languages in the world used as officials.
+
+const fetchCountriesLang = async() => {
+    try{
+        let response = await fetch(countriesAPI)
+        let data = await response.json()
+        const langArr = []
+        for (let i = 0; i < data.length; i++){
+            let lang = data[i].languages
+            for (let x = 0; x < lang.length; x++){
+                let l = lang[x].name
+                if(langArr[l] != undefined && langArr[l] != 0){                
+                    langArr[l] += 1
+                } else {
+                    langArr[l] = 1
+                }
+            }
+        }
+        console.log(Object.entries(langArr).sort((a, b) => b[1] - a[1]))
+
+    } catch(err) {
+        console.log(err)
+    }
+}
+
+fetchCountriesLang()
