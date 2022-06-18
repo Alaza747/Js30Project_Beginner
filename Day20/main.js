@@ -1,10 +1,9 @@
 import { countries_data } from "./countries_data.js";
 
+//airbnb styling guide link:
+//https://github.com/airbnb/javascript 
 
-const arrLike = { 0: 'foo', 1: 'bar', 2: 'baz', length: 3 };
+// ternary
 
-
-// good
-const arrGood = Array.from(arrLike);
-console.log(arrLike)
-console.log(arrGood)
+let isRaining = true
+const result = isRaining ? console.log('You need a rain coat.') : console.log('No need for a rain coat.')
