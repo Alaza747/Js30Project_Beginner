@@ -30,3 +30,10 @@ for (let i in getSomeP){
 // 1-5 Set a text content to paragraph the fourth paragraph,Fourth Paragraph
 
 getSomeP[3].textContent = 'Fourth Paragraph'
+
+// 1-6 Set id and class attribute for all the paragraphs using different attribute setting methods
+
+getSomeP[0].classList.add('new_id')
+getSomeP[1].id = 'Some_Id_cooler'
+getSomeP[2].setAttribute('class', 'someClass')
+getSomeP[3].setAttribute('id', 'lastId')
