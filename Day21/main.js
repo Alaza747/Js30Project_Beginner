@@ -75,10 +75,9 @@ const getNextColor = () => {
 
 
 const changeColor = () => {
-    const prep = document.getElementById('year').textContent
-    const text = prep.substring(prep.length - 4)
-    console.log(typeof(text))
-    text.style. = getNextColor()
+    const prep = document.getElementById('year')
+    //const text = prep.substring(prep.length - 4)
+    prep.style.color = getNextColor()
 }
 
-//setInterval(changeColor, 1000)
+setInterval(changeColor, 1000)
