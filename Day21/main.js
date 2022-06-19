@@ -57,5 +57,25 @@ getSomeP.forEach((elem, i) => {
     }
 })
 
-// 2-3
+// 2-3 Set text content, id and class to each paragraph
+
 getSomeP[2].textContent = 'TEst content'
+
+
+// Level 3
+// 3-1 Develop the following application, use the following HTML elements to get started with. You will get the same code on starter folder. Apply all the styles and functionality using JavaScript only.
+const getNextColor = () => {
+    let letters = '0123456789ABCDEF'
+    let color = '#'
+    for (let i = 0; i < 6; i++){
+        color += letters[Math.floor(Math.random() * 16)]
+    }
+    return color
+}
+
+const changeColor = () => {
+    const background = document.querySelector('body')
+    background.style.backgroundColor = getNextColor()
+}
+
+//setInterval(changeColor, 1000)
