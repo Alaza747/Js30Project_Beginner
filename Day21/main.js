@@ -56,3 +56,6 @@ getSomeP.forEach((elem, i) => {
         elem.style.color = 'green'
     }
 })
+
+// 2-3
+getSomeP[2].textContent = 'TEst content'
