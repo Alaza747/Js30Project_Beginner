@@ -20,3 +20,9 @@ console.log(getId)
 
 const getSomeP = document.querySelectorAll('p')
 console.log(getSomeP)
+
+// 1-4 Loop through the nodeList and get the text content of each paragraph
+
+for (let i in getSomeP){
+    console.log(getSomeP[i].textContent)
+}
