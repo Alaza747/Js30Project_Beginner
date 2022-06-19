@@ -26,3 +26,7 @@ console.log(getSomeP)
 for (let i in getSomeP){
     console.log(getSomeP[i].textContent)
 }
+
+// 1-5 Set a text content to paragraph the fourth paragraph,Fourth Paragraph
+
+getSomeP[3].textContent = 'Fourth Paragraph'
