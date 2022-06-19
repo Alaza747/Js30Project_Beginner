@@ -37,3 +37,10 @@ getSomeP[0].classList.add('new_id')
 getSomeP[1].id = 'Some_Id_cooler'
 getSomeP[2].setAttribute('class', 'someClass')
 getSomeP[3].setAttribute('id', 'lastId')
+
+// Level 2
+// 2-1 Change style of each paragraph using JavaScript(eg. color, background, border, font-size, font-family)
+
+getSomeP[0].style.color = 'green'
+getSomeP[1].style.backgroundColor = 'red'
+getSomeP[2].style.fontSize = '10px'
