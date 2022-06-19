@@ -5,9 +5,13 @@ import { countries_data } from "./countries_data.js";
 
 const getP = document.getElementsByTagName('p')
 
-
+/*
 for (let i in getP){
     console.log(getP[i])
 }
+*/
 
-// 1-2 
+// 1-2 Get each of the the paragraph using document.querySelector('#id') and by their id
+
+const getId = document.querySelector('#second')
+console.log(getId) 
