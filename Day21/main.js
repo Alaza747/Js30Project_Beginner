@@ -44,3 +44,15 @@ getSomeP[3].setAttribute('id', 'lastId')
 getSomeP[0].style.color = 'green'
 getSomeP[1].style.backgroundColor = 'red'
 getSomeP[2].style.fontSize = '10px'
+
+// 2-2 Select all paragraphs and loop through each elements and give the first and third paragraph a color of green, and the second and the fourth paragraph a red color
+getSomeP.forEach((elem, i) => {
+    elem.style.color = 'black'
+    elem.style.fontSize = '18px'
+    elem.style.backgroundColor = 'white'
+    if(i % 2 == 0){
+        elem.style.color = 'red'
+    } else {
+        elem.style.color = 'green'
+    }
+})
