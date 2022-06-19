@@ -10,7 +10,4 @@ for (let i in getP){
     console.log(getP[i])
 }
 
-
-getP.forEach(element => {
-    console.log(element)
-});
+// 1-2 
