@@ -15,3 +15,8 @@ for (let i in getP){
 
 const getId = document.querySelector('#second')
 console.log(getId) 
+
+// 1-3 Get all the p as nodeList using document.querySelectorAll(tagname) and by their tag name
+
+const getSomeP = document.querySelectorAll('p')
+console.log(getSomeP)
