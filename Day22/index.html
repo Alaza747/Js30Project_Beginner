@@ -10,6 +10,37 @@
         <button onclick="alert('Another button clicked')">NOOOOO, don't click me</button>
 
         
-        <script type="module" src="main.js"></script>
+        <script>
+            const isPrime = (num) => {
+                for (let x = 2; x < num; x++) {
+                    if (num % x === 0) {
+                        return false;
+                    }
+                }
+                return num > 1;
+            }
+        
+            
+            let a 
+            for( let i = 0; i < 100; i++ ) {
+                if( i % 5 == 0 ) {
+                    document.write('<br>')
+                }
+                a = document.createElement('button')
+                a.style.backgroundColor = 'green'
+                a.textContent = i
+
+                if( isPrime(i) === true) {
+                    console.log(i, 'is prime', isPrime(i))
+                    a.style.backgroundColor = 'red'
+                }
+                
+                if( i % 2 == 0 ) {
+                    a.style.backgroundColor = 'orange'
+                }
+                a.style.width = '40px'
+                document.body.appendChild(a)
+            }
+        </script>
     </body>
 </html>
