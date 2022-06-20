@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Day 22: Countries HTML</title>
+    </head>
+
+    <body>
+        
+        
+        <script type="module">
+            import { countries_data } from "./countries_data.js";
+            
+
+            
+            let a 
+            let b = document.createElement('div')
+            b.style.paddingTop = '40px'
+            b.style.zIndex = '1'
+            b.style.margin = '-100 auto'
+            b.style.width = '500px'
+            b.style.position = 'fixed'
+            b.style.left = '50%'
+            document.body.appendChild(b)
+            
+            for( let i = 0; i < countries_data.length; i++ ) {
+                if( i % 5 == 0 ) {
+                    let linebreak = document.createElement('br')
+                    b.appendChild(linebreak)
+                }
+                a = document.createElement('button')
+                a.style.backgroundColor = 'white'
+                a.textContent = i + countries_data[i].name
+                a.style.border = '1px solid black'
+                a.style.padding = '10px'
+                a.style.margin = '10px'
+                a.style.fontSize = '8px'
+                a.style.textAlign = 'center'
+                a.style.width = '60px'
+                a.style.height = '60px'
+                
+                b.appendChild(a)
+            }
+        </script>
+    </body>
+</html>
