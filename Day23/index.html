@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Day 23: Event Listeners</title>
+    </head>
+
+    <body>
+        <button id="first">HI, click me</button>
+        <button>NOOOOO, don't click me</button>
+
+
+        <input type="text" placeholder="put in some text"/>
+        <p></p>
+
+        <script>
+            const button1 = document.getElementById('first')
+            button1.addEventListener('mouseenter', e => {
+                console.log('Button clicked')
+                console.log('e.target', e.target)
+                console.log('e.target.textcontent', e.target.textContent)
+            })
+
+            const input = document.querySelector('input')
+            const p = document.querySelector('p')
+
+            input.addEventListener('blur', e => {
+                p.textContent = e.target.value
+            })
+        </script>
+        
+        
+    </body>
+</html>
