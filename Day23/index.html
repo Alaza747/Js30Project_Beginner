@@ -6,25 +6,22 @@
     </head>
 
     <body>
-        <h1>Body Mass Index Calculator</h1>
+        <h1>Giving feedback using blur event</h1>
 
-        <input type="text" id="mass" placeholder="Mass in Kilogram" />
-        <input type="text" id="height" placeholder="Height in meters" />
-        <button>Calculate BMI</button>
+        <input type="text" id="mass" placeholder="say something" />
+        <p></p>
 
         <script>
-        const mass = document.querySelector('#mass')
-        const height = document.querySelector('#height')
-        const button = document.querySelector('button')
+            const input = document.querySelector('input')
+            const p = document.querySelector('p')
 
-        let bmi
-        height.addEventListener('input', () => {
-            bmi = mass.value / height.value ** 2
-            alert(`your bmi is ${bmi.toFixed(2)}`)
-            console.log(bmi)
-        })
+            input.addEventListener('blur', (e) => {
+                p.textContent = 'Field is required'
+                p.style.color = 'red'
+
+            })
         </script>
-        
-        
+            
+            
     </body>
 </html>
