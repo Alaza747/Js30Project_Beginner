@@ -6,14 +6,58 @@
     </head>
 
     <body>
-        <h1>Key events: Press any key</h1>
+        <h1 >Number Generator</h1>
+        <h2>30 Days of JS: DOM Part 3</h2>
+
+        
+        <input type="text" id="number" placeholder="How many numbers?" />
+        <button>GO!</button>
+        <div style="width: 500px;" id="result"></div>
 
         <script>
-        document.body.addEventListener('keypress', e => {
-            alert(e.keyCode)
-        })
+            const num = document.querySelector('#number')
+            const but = document.querySelector('button')
+            const div1 = document.querySelector('#result')
+
+            const isPrime = (x) => {
+                for (let i = 2; i < x; i++){
+                    if(x % i === 0){
+                        return false
+                    }
+                }
+                return x > 1
+            }
+
+            let some
+
+            but.addEventListener('click', () => {
+                
+                for (let i = 0; i < num.value; i++){
+                    some = document.createElement('h1')
+                    some.style.float = 'left'
+                    some.style.width = '33.33%'
+                    some.style.margin = '50px'
+                    some.style.textAlign = 'center'
+                    some.textContent = i
+                    
+                    if( i % 5 == 0){
+                        let breakline = document.createElement('br')
+                        div1.appendChild(breakline)
+                    }
+
+                    if(isPrime(i)){
+                        some.style.backgroundColor = 'red'
+                    } else if ( i % 2 === 0){
+                        some.style.backgroundColor = 'yellow'    
+                    } else {
+                        some.style.backgroundColor = 'green'
+                    }
+
+                    div1.appendChild(some)
+                }    
+            })
+
         </script>
-            
             
     </body>
 </html>
