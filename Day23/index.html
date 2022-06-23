@@ -6,27 +6,23 @@
     </head>
 
     <body>
-        <button id="first">HI, click me</button>
-        <button>NOOOOO, don't click me</button>
+        <h1>Body Mass Index Calculator</h1>
 
-
-        <input type="text" placeholder="put in some text"/>
-        <p></p>
+        <input type="text" id="mass" placeholder="Mass in Kilogram" />
+        <input type="text" id="height" placeholder="Height in meters" />
+        <button>Calculate BMI</button>
 
         <script>
-            const button1 = document.getElementById('first')
-            button1.addEventListener('mouseenter', e => {
-                console.log('Button clicked')
-                console.log('e.target', e.target)
-                console.log('e.target.textcontent', e.target.textContent)
-            })
+        const mass = document.querySelector('#mass')
+        const height = document.querySelector('#height')
+        const button = document.querySelector('button')
 
-            const input = document.querySelector('input')
-            const p = document.querySelector('p')
-
-            input.addEventListener('blur', e => {
-                p.textContent = e.target.value
-            })
+        let bmi
+        height.addEventListener('input', () => {
+            bmi = mass.value / height.value ** 2
+            alert(`your bmi is ${bmi.toFixed(2)}`)
+            console.log(bmi)
+        })
         </script>
         
         
