@@ -9,15 +9,21 @@
         <h1 >Number Generator</h1>
         <h2>30 Days of JS: DOM Part 3</h2>
 
+        <div id="main" style="position: absolute; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; top: 40%; left: 50%; transform: translate(-50%, -10%);">
+            <input type="text" id="number" placeholder="How many numbers?" />
+            <button>GO!</button>
+        </div>
+
+        <div style="width: 500px; position: absolute; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; top: 50%; left: 50%; transform: translate(-50%, -10%);" id="result">
         
-        <input type="text" id="number" placeholder="How many numbers?" />
-        <button>GO!</button>
-        <div style="width: 500px;" id="result"></div>
+        </div>
 
         <script>
+            const main = document.querySelectorAll('#main')
             const num = document.querySelector('#number')
             const but = document.querySelector('button')
             const div1 = document.querySelector('#result')
+
 
             const isPrime = (x) => {
                 for (let i = 2; i < x; i++){
@@ -31,12 +37,17 @@
             let some
 
             but.addEventListener('click', () => {
-                
+                /*
+                for (const oldElem of div1.???){
+                    div1.removeChild(oldElem)
+                }
+                */
+
                 for (let i = 0; i < num.value; i++){
-                    some = document.createElement('h1')
+                    some = document.createElement('div')
                     some.style.float = 'left'
-                    some.style.width = '33.33%'
-                    some.style.margin = '50px'
+                    some.style.width = '90px'
+                    some.style.margin = '5px'
                     some.style.textAlign = 'center'
                     some.textContent = i
                     
